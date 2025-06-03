@@ -1,0 +1,97 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FAFAFA; /* Off-white background */
+      color: #1E1E1E; /* Dark text */
+    }
+nav {
+      background-color: #2C2C2C; /* Dark navbar */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+nav a {
+      color: #FFC24E; /* Accent color */
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+nav a:first-child {
+      margin-left: 0;
+    }
+nav a:hover {
+      text-decoration: underline;
+    }
+/*section.recipe {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+section.recipe h1 {
+      color: #2C2C2C;
+    }
+section.recipe p.description {
+      font-style: italic;
+      color: #666666;
+    }*/
+
+.section {
+    position: relative;
+    display: flex;
+    width: 1fr;
+    min-height: 12rem;
+    max-height: 15rem;
+    background-color: red;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    min-height: 15rem;
+    color: #e0e0e0; 
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/produce.jpg');
+}
+
+#recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/carbonara.jpg');
+}
+
+#recipe::before, #home::before {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+      rgba(76, 76, 76, 1), 
+      rgba(76, 76, 76, 0)  
+    );
+    z-index: 0;
+}
+
+#home > h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#recipe > h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
