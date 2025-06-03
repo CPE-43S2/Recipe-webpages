@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Ballerina Cappucina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono';
+        }
+
+        body {
+            color: black;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width:140px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 0 10px;
+        }
+
+        .logo-container {
+            padding: 12px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            flex: 1;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px 0 0 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: rgb(233, 175, 100);
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 85, 0, 0.3);
+        }
+
+        .nav-link span {
+            font-size: 14px;
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: rgba(255, 85, 0, 0.3);
+            border-radius: 24px 0 0 24px;
+            overflow: auto;
+        }
+
+        .content-wrapper {
+            padding-top: 24px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 32px;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 24px;
+        }
+
+        .web-title {
+            font-size: 22px;
+            color: black;
+        }
+
+        .dashboard-container {
+            position: relative;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .dashboard-bg-image {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .dashboard-header {
+            position: relative;
+            background-image: url("coffee-beans-scaled.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: darken;
+            border-radius: 8px;
+            box-shadow: none;
+            margin-bottom: 30px;
+            min-height: 120px;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .dashboard-header h1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-header p {
+            font-size: 24px;
+            padding-left: 48px;
+            padding-top: 16px;
+            color: white
+        }
+
+        .dashboard-header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .welcome-text {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            background: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 15px;
+        }
+
+        .welcome-text p {
+            margin: 5px 0;
+            font-size: 24px;
+            color: white;
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .header-wrapper {
+            margin-left: 28px;
+        }
+
+        .footer {
+            padding: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="web-title">cappucina</h2>
+        <h2 class="web-title">ballerina</h2>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="noFilter.png" alt="logo" width="100">
+            </div>
+        </div>
+
+        <nav class = nav>
+            <a href="#" class="nav-link active" style="color: rgb(0, 0, 0)">
+                <img src="1828765.png" width="24" height="24" alt="menu icon">
+                <span>menu</span>
+            </a>
+        </nav>
+    </div>
+
+
+    <div class="main-content">
+        <div class="content-wrapper">
+            <h1 class="page-title">menu > recipes</h1>
+                <div class="dashboard-container">
+                    <div class="dashboard-header">
+                        <p><b>start your day</b></p>
+                        <p><b>&emsp;with a cappucina ballerina</b></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
