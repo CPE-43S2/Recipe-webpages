@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-family: 'Roboto', sans-serif;
+            background: #f8f9fa;
+            color: #000000;
+            scroll-behavior: smooth;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252323;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #8f309b;
+        }
+
+        .rightNav {
+            text-align: right;
+        }
+
+        #search {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
+        
+        body {
+            text-align: justify;
+            text-justify: inter-word;
+            background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url('cookbg.png');
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: 1.2px;
+        }
+        h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1.2px;
+        }
+        .container1 {
+        background: rgba(110, 92, 37, 0.7);
+        color:#040404;
+        padding: 0.4rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container2 {
+        background: rgba(71, 63, 25, 0.7);
+        color:#040404;
+        padding: 0.4rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 0.4rem 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1 class="title"  style="color:rgb(255, 255, 255);">The Recipes</h1>
+        <li><a href="#Adobo.asp">Adobo</a></li>
+        <li><a href="#Sinigang.asp">Sinigang</a></li>
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Input Object">
+            <button class="btn btn-sm">Search</button>
+        </div>
+      </ul>
+        <h2 id="Adobo.asp">Adobo</h2>
+        <img src="adobo.png" alt="adobo" style="width:200px;height:150px;" class="center">
+        <div class="container1">
+        <table> 
+                <tr>
+                <th>Meat of choosing</th>
+                </tr>
+                <td>Chicken</td>
+                <tr>
+                <td> Pork</td>
+                </tr>
+                </table>
+            <table>
+                <tr>
+                <th>Vegetables and Seasonings to use</th>
+                </tr>
+                <tr>
+                <td>Garlic</td>
+                </tr>
+                <tr>
+                <td>Dried Bay Leaves</td>
+                </tr>
+                <tr>
+                <td>Whole Black Peppercorns</td>
+                </tr>
+                <tr>
+                <td>Soy Sauce</td>
+                </tr>
+                <tr>
+                <td>Vinegar</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container2">
+        <h3> Steps</h3>
+        <p>1. Sear the meat. Pat your choice of meat dry with paper towels, season with salt, then sear in a Dutch oven (or large heavy-bottomed pot) until browned all over. Transfer meat to a plate. <br>
+            2. Make the adobo. Toast garlic cloves, dried bay leaves, and whole peppercorns in the residual oil, then add water, soy sauce, cane vinegar, and oyster sauce, scraping any brown bits on the bottom. Return meat to the pot and simmer until cooked through. <br>
+            3. Broil the meat. Place the meat on a foil-lined baking sheet and broil until browned. <br>
+            4. Serve with rice. Pile rice onto a plate, add a meat piece or two, then drench everything with sauce. 
+        </p>
+        </div>
+    <h2 id="Sinigang.asp">Sinigang</h2>
+    <img src="sinigang.png" alt="sinigang" style="width:200px;height:150px;" class="center">
+    <div class="container1">      
+        <table>
+            <tr>
+            <th>Meat of choosing</th>
+            </tr>
+            <td>Pork</td>
+            </table>
+        <table>
+            <tr>
+            <th>Vegetables and Seasonings to use</th>
+            </tr>
+            <tr>
+            <td>Red Onion</td>
+            </tr>
+            <tr>
+            <td>Tomato</td>
+            </tr>
+            <tr>
+            <td>Kangkong Stalk and Leaves</td>
+            </tr>
+            <tr>
+            <td>Talong</td>
+            </tr>
+            <tr>
+            <td>Green Chilli Pepper</td>
+            </tr>
+            <tr>
+            <td>Knorr Sinigang Mix</td>
+            </tr>
+            <tr>
+            <td>Optional: Labanos and Okra</td>
+            </tr>
+        </table>
+    </div>  
+        <div class="container2">
+        <h3> Steps</h3>
+            <p>1. Begin by washing pork spare ribs in cold running water to remove any visible impurities. Then, place pork ribs submerge in a medium pot with a liter of water. Bring to a boil without covering the pot and allow the scum to float to the surface. Meticulously remove the scums from the surface of the water using a slotted spoon or a spatula. Scums are impurities found in meat. <br>
+                2. After the broth clears up, turn you heat to medium setting, then it’s time toss in your onions and tomatoes to add flavor to the broth. Cover your pot and let it simmer to fully cook your meat. Use a fork to pierce the meat so that the flavors would also enter the meaty parts of the spare ribs, You also do this so you can tell if it’s already set and tender. <br>
+                3. You can already add your vegetables. Start by adding the sitaw, kangkong stalks and talong into the pot and cook until these turn dark green. If you decide to use labanos and okra, you can also add those at this point. This should take roughly around 2-3 minutes.<br>
+                4. Add in your siling sigang, kangkong leaves and the Knorr Sinigang sa Sampaloc Mix. Stir and let it simmer. It should be done in about 2-3 minutes. <br>
+                5. All done! Transfer your Sinigang to a serving bowl. This is a happy treat that warms, soothes and satisfies everyone in the family! Remember to prepare extra servings of rice to enjoy the extra asim kilig taste of this Filipino classic soup. Enjoy!
+            </p>
+        </div>
+</body>
+</html>
