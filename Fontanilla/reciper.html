@@ -1,0 +1,223 @@
+<style>
+    body {
+        background-color: #9bcae2;
+    }
+    h1 {
+        color: #47778d;
+        font-family: monospace;
+        font-size: 50px;
+        margin-bottom: 10;
+        width: 100px;
+    }
+    p {
+        color: #8a7254;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: bold;
+        margin-left: 20px;
+        margin: 0 0 5px 43px;
+    }
+    ol {
+        padding-bottom: 16px;
+        margin-bottom: 5px;
+    }
+    li {
+        color: #8a7254;
+        font-size: 20px;
+        margin-left: 80px;
+        list-style-type: "none";
+        list-style-type: "- ";
+        font-family: monospace;
+    }
+
+    img {
+        outline: 5px solid #a7845a;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 12px;
+    }
+    .footer {
+        margin-top: 0px;
+        outline: none;
+    }
+    .maindonut {
+        outline: 5px solid #46748a;
+        border-radius: 12px;
+    }
+    .mainpancake {
+        outline: 5px solid #46748a;
+        border-radius: 12px;
+    }
+    .mainpizza {
+        outline: 5px solid #46748a;
+        border-radius: 12px;
+    }
+    .prep {
+        margin-top: 5px;
+        outline: none;
+    }
+    .left {
+        outline: 5px solid #a7845a;
+        background-color: #c1e5f7;
+    }
+    .right {
+        margin: -64 0 0 50%;
+        background-color: #c1e5f7;
+    }
+    .recipes {
+        outline: 5px solid black;
+        border-radius: 12px;
+    }
+    .recipebook {
+        width: 100px;
+        height: 100px;
+        transition:ease-in-out .1s;
+    }
+    .recipebook:hover {
+    transform: scale(1.2);
+    cursor: default;
+    }
+    .cook {
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    }
+
+    .cook:hover {
+    transform: scale(1.4);
+    }
+    p {
+    transition: transform .1s;
+    width: 400px;
+    }
+
+    p:hover {
+    transform: scale(1.1);
+    cursor: default;
+    }
+    li {
+    transition: transform .2s;
+    width: auto;
+    }
+
+    li:hover {
+    transform: scale(1.1);
+    cursor: default;
+    }
+    .footer {
+    transition:ease-in-out .2s;
+    width: 100px;
+    }
+
+    .footer:hover {
+    transform: scale(1.1);
+    cursor: default;
+    }
+    .title {
+    transition:ease-in-out .2s;
+    }
+
+    .title:hover {
+    transform: scale(1.2);
+    cursor: default;
+    }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe WebPage</title>
+    <link rel="icon" type="image/x-con" href="../recipe.webp">
+    <div>
+        <h1 class="title">RECIPE(S) COOKBOOK</h1>
+        <img class="recipebook" src="/img/recipe.webp">
+    </div>
+    
+</head>
+<body>
+    <div class="recipes" style="background-color: beige;">
+        <div class="maindonut">
+            <p class="text">Donut Recipe</p>
+            <img class="cook" src="/img/donut.jpg">
+            <div class="prep">
+                <div class="left">
+                    <p>Prep Time:</p>
+                    <li>10 mins</li>
+                </div>
+                <div class="right"> 
+                    <p>Cook Time:</p>
+                    <li>30 min</li>
+                </div>
+            </div>
+
+            <ol class="donutlist">
+                <li>3/4 Cup Scalded Milk</li>
+                <li>1/3 Cup Granulated Sugar</li>
+                <li>1/4 Teaspoon Salt</li>
+                <li>1(.25 ounce) envelope active dry yeast</li>
+                <li>1/4 Cup warm water</li>
+                <li>4 Cups of sifted all purpose flour</li>
+                <li>1 teaspoon freshly grated nutmeg</li>
+                <li>1/3 cup butter or margarine</li>
+                <li>2 eggs, beaten</li>
+                <li>oil for deep frying</li>
+                <li>2 cups confectioners sugar</li>
+                <li>6 tablespoons milk</li>
+            </ol>
+        </div>
+
+        <div class="mainpancake">
+            <p  class="text">Pancake Recipe</p>
+            <img class="cook" src="/img/pancake.jpg">
+            <div class="prep">
+                <div class="left">
+                    <p>Prep Time:</p>
+                    <li>5 mins</li>
+                </div>
+                <div class="right"> 
+                    <p>Cook Time:</p>
+                    <li>15 min</li>
+                </div>
+            </div>
+            <ol class="pancakelist">
+                <li>250g Plain Flour</li>
+                <li>1/2 tsp baking soda</li>
+                <li>1/2 tsp salt</li>
+                <li>1 tsp sugar</li>
+                <li>1 egg</li>
+                <li>250ml buttermilk</li>
+            </ol>
+        </div>
+
+        <div class="mainpizza">
+            <p class="text">Pizza Quesadillas Recipe</p>
+            <img class="cook" src="/img/pizza.jpg">
+            <div class="prep">
+                <div class="left">
+                    <p>Prep Time:</p>
+                    <li>10 mins</li>
+                </div>
+                <div class="right"> 
+                    <p>Cook Time:</p>
+                    <li>10 min</li>
+                </div>
+            </div>
+            <ol class="pizzalist">
+                <li>1 large flour tortilla</li>
+                <li>1/3 cup cheese</li>
+                <li>8 pepperoni slices</li>
+                <li>1/2 tsp italian seasoning</li>
+                <li>1/4 tsp garlic powder</li>
+                <li>pizza sauce for dipping</li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer">
+        <h1 class="footer">Fontanilla</h1>
+    </div>
+</body>
+</html>
