@@ -1,0 +1,26 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
